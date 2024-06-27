@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MUET GPA Calculator For Software Department</h1>
+        <div>
+            <label for="semester">Select Semester:</label>
+            <select id="semester" onchange="showSemester(this.value)">
+                <option value="">Select Semester</option>
+                <option value="1">Semester 1</option>
+                <option value="2">Semester 2</option>
+                <option value="3">Semester 3</option>
+                <option value="4">Semester 4</option>
+                <option value="5">Semester 5</option>
+                <option value="6">Semester 6</option>
+                <option value="7">Semester 7</option>
+                <option value="8">Semester 8</option>
+            </select>
+        </div>
+        <p> Note: This GPA Calculator is specifically designed for the 20SW and 21SW batches. It is not applicable to batches after 21SW. We will provide updates for future batches soon.</p>
+
+        <div id="semester-form" style="display: none;">
+            <h2 id="semester-title"></h2>
+            <form id="grades-form">
+                <div id="subjects-container"></div>
+                <button type="button" onclick="calculateGPA()">Calculate GPA</button>
+            </form>
+        </div>
+        <div id="gpa-result" style="display: none;">
+            <h2>Your GPA: <span id="gpa-value"></span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
