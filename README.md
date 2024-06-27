@@ -1,19 +1,21 @@
-<h1>GPA Calculator Website</h1>
+# GPA Calculator Website
 
-This GPA Calculator is designed to assist students from the 20SW and 21SW batches of the Software Engineering Department at Mehran University in calculating their GPA for up to 8 semesters. Future batches will be supported in upcoming updates.
+This GPA Calculator is designed to assist students from the 20SW, 21SW, and 22SW batches and onwards of the Software Engineering Department at Mehran University in calculating their GPA for up to 8 semesters.
 
-<h2>Features</h2> 
+## Features
 
+- Select a batch (20SW, 21SW, 22SW, and onwards).
 - Select a semester to input grades.
 - Calculate GPA based on grades and credit hours.
- 
-<h2>Usage</h2>
 
-1. <b>Select Semester:</b> Choose the semester for which you want to calculate the GPA.
-2. <b>Input Grades:</b> Enter the grades for each subject in the selected semester.
-3. <b>Calculate GPA:</b> Click the "Calculate GPA" button to see your GPA.
+## Usage
 
-<h2>Grading Points for GPA Calculation</h2>
+1. **Select Batch:** Choose the batch (20SW, 21SW, 22SW, and onwards) to ensure accurate GPA calculation.
+2. **Select Semester:** Choose the semester for which you want to calculate the GPA.
+3. **Input Grades:** Enter the grades for each subject in the selected semester.
+4. **Calculate GPA:** Click the "Calculate GPA" button to see your GPA.
+
+## Grading Points for GPA Calculation
 
 Grade points for each grade are as follows:
 
@@ -25,16 +27,20 @@ Grade points for each grade are as follows:
 - C : 1
 - F : 0
 
-<h2>Technology Stack</h2>
+## Technology Stack
 
 - HTML
 - CSS
 - JavaScript
 
-<h2>Responsive Design</h2>
+## Responsive Design
 
 The website is designed to be responsive and works seamlessly across all devices, including PCs, laptops, Macs, Android devices, and iPhones.
 
-<h2>Contact</h2>
+## Contributors
 
-For any inquiries or support, please contact [bilalmajid002@gmail.com].
+- Uzair Hussain - [Reach out on LinkedIn](https://linkedin.com/in/uzairhussan1/)
+
+## Contact
+
+For any inquiries or support, please contact [Email me](mailto:bilalmajid002@gmail.com).
