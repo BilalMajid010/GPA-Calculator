@@ -2,78 +2,52 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: rgb(7, 7, 96);
+}
+
+p{
+    color: #ff0000;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
-    background: #fff;
-    border-radius: 5px;
+    background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2 {
     text-align: center;
-    color: #333;
 }
 
-label, select {
+label {
     display: block;
-    margin: 10px 0;
-    font-size: 18px;
+    margin: 10px 0 5px;
 }
 
-select {
-    padding: 5px;
+select, button {
     width: 100%;
-    max-width: 200px;
-    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
 }
 
-.subject-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.subject {
     margin-bottom: 10px;
 }
 
-.subject-row label {
-    flex: 1;
-}
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
 
-.subject-row select, .subject-row input {
-    flex: 2;
-    margin-left: 10px;
-}
+    select, button {
+        font-size: 14px;
+        padding: 8px;
+    }
 
-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-#batch-note {
-    color: #555;
-    text-align: center;
-    margin: 20px 0;
-}
-
-#gpa-result {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 24px;
-    color: #333;
+    label, h1, h2 {
+        font-size: 18px;
+    }
 }
