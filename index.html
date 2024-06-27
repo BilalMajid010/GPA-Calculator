@@ -8,7 +8,22 @@
 </head>
 <body>
     <div class="container">
-        <h1>MUET GPA Calculator For Software Department</h1>
+        <h1 style="display: flex; align-items: center;">
+            <div class="logo" style="margin-right: 10px;">
+                <img src="/assets/muet-logo.png" alt="Mehran University Logo" style="width: 100px; height: 100px;">
+            </div>
+            Mehran University of Engineering and Technology, Jamshoro
+        </h1>
+        <h2>GPA Calculator for SWE Students</h2>
+        <!-- <h1>MUET GPA Calculator For Software Department</h1> -->
+        <div>
+            <label for="batch">Select Batch:</label>
+            <select id="batch" onchange="handleBatchChange(this.value)">
+                <option value="">Select Batch</option>
+                <option value="20-21">20 or 21</option>
+                <option value="22-onwards">22 and onwards</option>
+            </select>
+        </div>
         <div>
             <label for="semester">Select Semester:</label>
             <select id="semester" onchange="showSemester(this.value)">
@@ -23,7 +38,7 @@
                 <option value="8">Semester 8</option>
             </select>
         </div>
-        <p> Note: This GPA Calculator is specifically designed for the 20SW and 21SW batches. It is not applicable to batches after 21SW. We will provide updates for future batches soon.</p>
+        <h5>Note: This GPA Calculator is specifically designed for different batches. Select the correct batch for accurate calculations.</h5>
 
         <div id="semester-form" style="display: none;">
             <h2 id="semester-title"></h2>
@@ -36,6 +51,21 @@
             <h2>Your GPA: <span id="gpa-value"></span></h2>
         </div>
     </div>
+    <footer style="text-align: center;">
+        <p>&copy; 2024 Made with ❤️ by the students of 21 batch.</p>
+        <div>
+            <p><b>Syed Bilal Majid</b>: 
+            <a href="https://www.linkedin.com/in/bilal-majid-37b56225a/" target="_blank"><img src="/assets/linkedin.svg" alt="LinkedIn" style="width: 30px; height: 30px;"></a>
+            <a href="https://github.com/BilalMajid010/" target="_blank"><img src="/assets/github.svg" alt="GitHub" style="width: 30px; height: 30px;"></a>
+            </p>
+        </div>
+        <!-- <div>
+            <p><b>Uzair Hussain</b> : 
+            <a href="https://www.linkedin.com/in/uzairhussain1" target="_blank"><img src="/assets/linkedin.svg" alt="LinkedIn" style="width: 30px; height: 30px;"></a>
+            <a href="https://github.com/uzairhussain193" target="_blank"><img src="/assets/github.svg" alt="GitHub" style="width: 30px; height: 30px;"></a>
+            </p>
+        </div> -->
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

@@ -9,6 +9,14 @@ const semesterSubjects = {
     8: ["Simulation & Modeling(3 C.H)", "Cloud Computing(3 C.H)", "Software Quality Engineering(3 C.H)", "Thesis/Project(3 C.H)", "Cloud Computing(Pr)(1 C.H)", "Software Quality Engineering(Pr)(1 C.H)"]
 };
 
+let currentBatch = "";
+
+function handleBatchChange(batch) {
+    currentBatch = batch;
+    document.getElementById('semester-form').style.display = 'none';
+    document.getElementById('gpa-result').style.display = 'none';
+}
+
 function showSemester(semester) {
     if (semester) {
         document.getElementById('semester-title').innerText = `Semester ${semester}`;
@@ -35,18 +43,33 @@ function generateSubjectsForm(semester) {
         const select = document.createElement('select');
         select.name = `subject${index + 1}`;
         select.dataset.credits = getCreditsFromSubject(subject);
-        select.innerHTML = `
-            <option value="">Select Grade</option>
-            <option value="4">A+</option>
-            <option value="3.5">A</option>
-            <option value="3">B+</option>
-            <option value="2.5">B</option>
-            <option value="2">C+</</option>
-            <option value="1">C</option>
-            <option value="0">F</option>
-        `;
-        subjectDiv.appendChild(select);
 
+        if (currentBatch === "20-21") {
+            select.innerHTML = `
+                <option value="">Select Grade</option>
+                <option value="4">A+</option>
+                <option value="3.5">A</option>
+                <option value="3">B+</option>
+                <option value="2.5">B</option>
+                <option value="2">C+</option>
+                <option value="1">C</option>
+                <option value="0">F</option>
+            `;
+        } else if (currentBatch === "22-onwards") {
+            select.innerHTML = `
+                <option value="">Select Grade</option>
+                <option value="4">A+</option>
+                <option value="3.5">A</option>
+                <option value="3">B+</option>
+                <option value="2.5">B</option>
+                <option value="2">C+</option>
+                <option value="1.5">C</option>
+                <option value="1">C-</option>
+                <option value="0">F</option>
+            `;
+        }
+
+        subjectDiv.appendChild(select);
         subjectsContainer.appendChild(subjectDiv);
     });
 }
