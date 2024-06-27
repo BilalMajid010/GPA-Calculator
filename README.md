@@ -39,6 +39,7 @@ The website is designed to be responsive and works seamlessly across all devices
 
 ## Contributors
 
+- Syed Bilal Majid - [Reach out on LinkedIn](https://linkedin.com/in/uzairhussan1/)
 - Uzair Hussain - [Reach out on LinkedIn](https://linkedin.com/in/uzairhussan1/)
 
 ## Contact

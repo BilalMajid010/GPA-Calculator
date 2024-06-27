@@ -5,10 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GPA Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/assets/muet-logo.png" type="image/x-icon">
+
 </head>
 <body>
     <div class="container">
-        <h1>MUET GPA Calculator For Software Department</h1>
+        
+        <!-- <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="/assets/muet-logo.png" alt="Mehran University Logo">
+                </div>
+                <div class="title">
+                    <h1>Mehran University of Engineering and Technology, Jamshoro</h1>
+                    <h2>GPA Calculator for SWE Students</h2>
+                </div>
+            </div>
+        </header> -->
+        <header>
+            <div class="container">
+                <div class="title">
+                    <h1 style="display: flex; align-items: center;">
+                        <div class="logo" style="margin-right: 10px;">
+                            <img src="/assets/muet-logo.png" alt="Mehran University Logo" style="width: 50px; height: 50px;">
+                        </div>
+                        Mehran University of Engineering and Technology, Jamshoro
+                    </h1>
+                    <h2>GPA Calculator for SWE Students</h2>
+                </div>
+            </div>
+        </header>
         <div>
             <label for="batch">Select Batch:</label>
             <select id="batch" onchange="handleBatchChange(this.value)">
@@ -44,6 +70,21 @@
             <h2>Your GPA: <span id="gpa-value"></span></h2>
         </div>
     </div>
+    <footer>
+        <p>&copy; 2024 Made with ❤️ by the students of 21 batch.</p>
+        <div>
+            <p><b>Syed Bilal Majid</b>: 
+            <a href="https://www.linkedin.com/in/uzairhussain1" target="_blank"><img src="/assets/linkedin.svg" alt="LinkedIn" style="width: 30px; height: 30px;"></a>
+            <a href="https://github.com/uzairhussain193" target="_blank"><img src="/assets/github.svg" alt="GitHub" style="width: 30px; height: 30px;"></a>
+            </p>
+        </div>
+        <!-- <div>
+            <p><b>Uzair Hussain</b> : 
+            <a href="https://www.linkedin.com/in/uzairhussain1" target="_blank"><img src="/assets/linkedin.svg" alt="LinkedIn" style="width: 30px; height: 30px;"></a>
+            <a href="https://github.com/uzairhussain193" target="_blank"><img src="/assets/github.svg" alt="GitHub" style="width: 30px; height: 30px;"></a>
+            </p>
+        </div> -->
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
